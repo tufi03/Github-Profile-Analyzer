@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GitHub Analyzer</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input, button {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        #result, #users {
+            margin-top: 20px;
+        }
+
+        .user-card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GitHub Profile Analyzer</h1>
+
+    <input type="text" id="username" placeholder="Enter GitHub username">
+    <button onclick="fetchUser()">Fetch User</button>
+
+    <div id="result"></div>
+
+    <h2>Saved Users</h2>
+    <button onclick="loadUsers()">Load Users</button>
+    <div id="users"></div>
+
+    <script src="/static/app.js"></script>
+
+</body>
+</html>
